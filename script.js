@@ -244,9 +244,7 @@ function submitAtmPin() {
 
 // Slideshow Logic
 const atmMedia = [
-    { type: 'image', src: "images/memory_roses.png" },
-    { type: 'image', src: "images/memory_coffee.png" },
-    { type: 'image', src: "images/hero_couple.png" },
+
     { type: 'image', src: "images/photo_2026-10-08_22-40-50.jpg" },
     { type: 'image', src: "images/photo_2026-10-08_22-40-55.jpg" },
     { type: 'image', src: "images/photo_2026-10-08_22-41-01.jpg" },
