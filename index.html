@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ❤️</title>
+    <meta name="description" content="A special birthday surprise website for you.">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Site Lock Screen -->
+    <div id="site-lock-screen" class="lock-screen fullscreen-lock">
+        <i class="fas fa-lock lock-icon"></i>
+        <h3>Enter Password</h3>
+        <p>Hint: The magic word (love) 🤫</p>
+        <div class="password-container">
+            <input type="password" id="gallery-password" placeholder="Enter password...">
+            <button onclick="checkPassword()" class="unlock-btn">Unlock</button>
+        </div>
+        <p id="password-error" class="error-msg">Incorrect password, try again! 💔</p>
+    </div>
+
+    <!-- Romantic Loading Screen -->
+    <div id="loading-screen">
+        <div class="heartbeat-loader">
+            <i class="fas fa-heart"></i>
+        </div>
+        <p class="loading-text">Gathering our beautiful memories...</p>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        
+        <!-- Hearts Container -->
+        <div id="hearts-container"></div>
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Happy Birthday!</h1>
+                <p>To the most special person in my life</p>
+            </div>
+        </section>
+
+        <!-- Memories Timeline -->
+        <section class="memories">
+            <h2 class="section-title">Our Beautiful Memories</h2>
+            <div class="timeline">
+                
+                <div class="memory-card">
+                    <div class="memory-img">
+                        <img src="images/memory_roses.png" alt="Red Roses">
+                    </div>
+                    <div class="memory-text">
+                        <h3>That Special Date</h3>
+                        <p>Remember that amazing evening? The roses were beautiful, but not as beautiful as your smile. Every moment with you feels like a dream I never want to wake up from.</p>
+                    </div>
+                </div>
+
+                <div class="memory-card">
+                    <div class="memory-img">
+                        <img src="images/memory_coffee.png" alt="Coffee Hearts">
+                    </div>
+                    <div class="memory-text">
+                        <h3>Cozy Mornings</h3>
+                        <p>Our little coffee dates and endless conversations. It's the simple things we do together that mean the most to me. Your laugh is my favorite sound.</p>
+                    </div>
+                </div>
+
+                <!-- Add more memory cards here -->
+                <div class="memory-card">
+                    <div class="memory-img">
+                        <video src="images/IMG_1224.MOV" autoplay loop muted playsinline></video>
+                    </div>
+                    <div class="memory-text">
+                        <h3>Beautiful Moments</h3>
+                        <p>Every moment spent with you is a treasure. I love how we can always find ways to smile together.</p>
+                    </div>
+                </div>
+
+                <div class="memory-card">
+                    <div class="memory-img">
+                        <img src="images/photo_2026-10-08_22-40-50.jpg" alt="Sweet Memory">
+                    </div>
+                    <div class="memory-text">
+                        <h3>Endless Smiles</h3>
+                        <p>Your smile brightens even my darkest days. Thank you for always bringing so much joy into my life.</p>
+                    </div>
+                </div>
+
+                <div class="memory-card">
+                    <div class="memory-img">
+                        <video src="images/IMG_1225.MOV" autoplay loop muted playsinline></video>
+                    </div>
+                    <div class="memory-text">
+                        <h3>Our Adventures</h3>
+                        <p>Whether we are exploring new places or just chilling at home, being with you is my favorite adventure.</p>
+                    </div>
+                </div>
+
+                <div class="memory-card">
+                    <div class="memory-img">
+                        <img src="images/photo_2026-10-08_22-41-01.jpg" alt="Happy Moments">
+                    </div>
+                    <div class="memory-text">
+                        <h3>Perfect Together</h3>
+                        <p>I can't imagine my world without you. Here's to making many more beautiful memories together.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Continue Button -->
+        <div class="continue-section">
+            <button class="continue-btn" onclick="showEnvelope()">Continue to your Letter 💌</button>
+        </div>
+        
+
+
+    </div>
+
+    <!-- Envelope Splash Screen (Now at the end) -->
+    <div id="envelope-screen" style="display: none; opacity: 0;">
+        <div class="envelope-wrapper" onclick="openEnvelope()">
+            <div class="envelope"></div>
+            <div class="flap"></div>
+            <div class="letter">
+                <div class="letter-content">
+                    <p class="greeting">Happiest birthday to my man. ❤️</p>
+                    <p class="body">
+                        You are the only person I trust and love. You are everything to me. You are my home, my comfort zone, my all-time favourite, my constant and my forever. Everything is you.<br><br>
+                        You came into my life so unexpectedly, and after you came, you made me feel like, "No one else matters as much. You are the important one." You brought that feeling into my life.<br><br>
+                        You are not just a boy to me. You are like my mother, my comfort, my safe place — everything is you. So yes, I have become very dependent on you, and sometimes you scold me for it. But I am dependent on you because you are my Jai Karthik. ❤️<br><br>
+                        I know, a hundred percent, a thousand percent, that this relationship of ours is going to be forever. It will last till the very end. Just like how we held hands when we went to Poetry cafe I want us to hold each other's hands and stay together until my very last day. 🤍<br><br>
+                        And I love you so much.<br><br>
+                        Our relationship is not just a relationship. It is friendship, adjustments, tolerance, understanding and a beautiful kind of peace.<br><br>
+                        Our relationship isn't perfect. It is made of imperfections, adjustments, understanding, sacrifices, tolerating each other's differences, and loving each other without expecting anything in return.<br><br>
+                        I love you. No matter how many years pass, I will always love you. ❤️<br><br>
+                        You are my Jai Karthik.<br>
+                        You are my mama.<br>
+                        You are my thangam. ❤️<br><br>
+                        Love you so much, and happiest 18th birthday! 🥹❤️<br><br>
+                        Thambi, you've officially become a major now! 😂❤️<br>
+                        Please buy your akka lots of things!
+                    </p>
+                    <p class="signature">Happiest birthday, my love. ❤️</p>
+                </div>
+            </div>
+            <div class="click-text">Click to open your letter</div>
+        </div>
+        <button class="screen-bottom-btn" id="envelope-continue-btn" onclick="showAtmScreen()">Continue ➡️</button>
+    </div>
+
+    <!-- Final ATM Screen -->
+    <div id="final-atm-screen" style="display: none; opacity: 0; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: radial-gradient(circle at center, #2a0a18, var(--dark)); justify-content: center; align-items: center; z-index: 10002; transition: opacity 1s ease;">
+        <div class="lock-screen atm-style">
+            <i class="fas fa-lock lock-icon"></i>
+            <h3 id="atm-main-instruction">Please Insert Card</h3>
+            <p id="atm-hint-instruction" style="opacity: 0; transition: opacity 0.5s ease;">Hint: Our anniversary (1402) 🤫</p>
+            
+            <div class="atm-machine" id="atm-machine-ui" style="pointer-events: none; opacity: 0.5; transition: opacity 0.5s ease;">
+                <div class="atm-screen-container">
+                    <div class="atm-side-buttons">
+                        <button class="atm-side-btn"></button>
+                        <button class="atm-side-btn"></button>
+                        <button class="atm-side-btn"></button>
+                    </div>
+                    <div class="atm-screen">
+                        <div id="atm-display"></div>
+                        <img id="atm-photo-display" src="images/memory_roses.png" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 4px; transition: opacity 0.3s ease; z-index: 5;">
+                        <video id="atm-video-display" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 4px; transition: opacity 0.3s ease; z-index: 5;" autoplay loop muted playsinline></video>
+                    </div>
+                    <div class="atm-side-buttons">
+                        <button class="atm-side-btn" onclick="nextPhoto()" title="Next Photo"></button>
+                        <button class="atm-side-btn"></button>
+                        <button class="atm-side-btn"></button>
+                    </div>
+                </div>
+                <div class="atm-keypad">
+                    <button onclick="pressKeyAtm(1)">1</button>
+                    <button onclick="pressKeyAtm(2)">2</button>
+                    <button onclick="pressKeyAtm(3)">3</button>
+                    <button onclick="pressKeyAtm(4)">4</button>
+                    <button onclick="pressKeyAtm(5)">5</button>
+                    <button onclick="pressKeyAtm(6)">6</button>
+                    <button onclick="pressKeyAtm(7)">7</button>
+                    <button onclick="pressKeyAtm(8)">8</button>
+                    <button onclick="pressKeyAtm(9)">9</button>
+                    <button onclick="clearAtmPin()" class="btn-clear">CLR</button>
+                    <button onclick="pressKeyAtm(0)">0</button>
+                    <button onclick="submitAtmPin()" class="btn-enter">ENT</button>
+                </div>
+                <div class="atm-card-slot">
+                    <div class="slot-opening"></div>
+                </div>
+            </div>
+            
+            <!-- ATM Card -->
+            <div class="atm-card" id="atm-card" onclick="insertCard()">
+                <div class="card-chip"></div>
+                <div class="card-name">Bhav</div>
+                <div class="card-text">Tap to Insert</div>
+            </div>
+            
+            <p id="atm-error" class="error-msg">Incorrect PIN, try again! 💔</p>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
