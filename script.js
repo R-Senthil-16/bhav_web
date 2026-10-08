@@ -196,7 +196,7 @@ function submitAtmPin() {
     const errorMsg = document.getElementById('atm-error');
     const lockScreen = document.querySelector('#final-atm-screen .atm-style');
     
-    const secretPin = "1402"; 
+    const secretPin = "3103"; 
 
     if (currentPin === secretPin) {
         errorMsg.style.opacity = '0';
