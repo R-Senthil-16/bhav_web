@@ -153,7 +153,6 @@ function insertCard() {
     const card = document.getElementById('atm-card');
     const machine = document.getElementById('atm-machine-ui');
     const instructions = document.getElementById('atm-main-instruction');
-    const hint = document.getElementById('atm-hint-instruction');
     
     card.classList.add('inserted');
     
@@ -164,7 +163,6 @@ function insertCard() {
         machine.style.opacity = '1';
         
         instructions.textContent = "Enter PIN for Final Surprise";
-        hint.style.opacity = '1';
         
         document.getElementById('atm-display').textContent = "_";
         currentPin = "";
@@ -204,13 +202,11 @@ function submitAtmPin() {
         // Show media in ATM
         const atmDisplay = document.getElementById('atm-display');
         const instructions = document.getElementById('atm-main-instruction');
-        const hint = document.getElementById('atm-hint-instruction');
         
         // Hide asterisks
         atmDisplay.style.display = 'none';
         
         instructions.textContent = "Press top right button for next memory ✨";
-        hint.style.opacity = '0'; // hide hint
         
         // Show first media
         currentMediaIndex = 0;
